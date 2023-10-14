@@ -19,9 +19,6 @@
         <input type="submit" value="Generate" />
       </fieldset>
     </form>
-    <% if(locals.id){ %>
-    <p>URL Generated: http://localhost:8000/url/<%= id%></p>
-    <%}%> <% if(locals.urls){ %>
     <table>
       <thead>
         <tr>
@@ -36,9 +33,9 @@
           <td><%= url.redirectURL %></td>
           <td>
             <a
-              href="http://localhost:8000/url/<%= url.shortId %>"
+              href="https://url-shortner-cqqr.onrender.com/url/<%= url.shortId %>"
               target="_blank"
-              >http://localhost:8000/url/<%=url.shortId %></a
+              >https://url-shortner-cqqr.onrender.com/url/<%=url.shortId %></a
             >
           </td>
           <td><%=url.visitHistory.length%></td>
